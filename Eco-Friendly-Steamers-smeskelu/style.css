@@ -1,0 +1,131 @@
+/* I tried to add image hero here, but did not worked. I tried to do this all by myslef, but I went to the bot, but i have changed my mind to go study hall an */
+body {
+  background-color: none;
+  margin: 0;
+
+}
+
+header {
+  background-color: none;
+  height: 100px;
+
+}
+/* I also tried to add hero image, but this also failed */
+img {
+  background-color: none;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding-bottom: 90%;
+  margin-right: 40%;
+}
+ /* for this I went to the study hall in order to get helped, and jeremiah and I tweeked 
+ the ul so there would be no spaces or empty spots to seen. Also I reconsidered for accessbility colors due to not overpowering the screen with dark colors-- as you can see the chosen colors for lightsteelblue and lavender were my 
+ onyly options. that is because I wanted to balance the colors with each other as well as reconsidering about accessbility. */
+.nav ul {
+  background-color: lightsteelblue;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+  width: 125%;
+}
+
+.nav li {
+  background-color: lightsteelblue;
+  display: inline-block;
+  padding: 20px;
+  margin: 0 10px;
+  
+}
+ 
+.nav a {
+  background-color: none;
+  color: white;
+  text-decoration: none;
+  margin-left: 20%;
+  
+}
+.nav a:hover {
+  color: none;
+}
+/* this is where i have added image hero because i have failed to put it everywhere else also jeremiah helped on this one as well in order for the image to be displayed horizontally */
+section {
+  background-color:  lavender;
+  width: 100%;
+  margin: 50 auto 0 auto;
+  background-image: url("img/logo.png");
+  height: 500px;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-box{
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+/* same reasoning as below, jeremiah helped me tweek a little for the offer container to align right */
+#quote-offer-container {
+  background-color: lightgoldenrodyellow;
+  margin-right: 0px;
+  margin-left: auto;
+  padding: 21px;
+  border-radius: 14px;
+  color: green;
+  height: 50%;
+  width: 20%;
+  float: right;
+
+}
+/* I tried adding border-color: green; but failed instead I decided to go with lightgoldenrodyellow for this as well as with the form. also jeremiah helped tweek a little in order for the quote for form to align right. */
+#quote-form-container {
+  background-color: none;
+  padding: 20px;
+  margin-top: 30px;
+  height: 200px;
+  border-radius: 19px;
+  float: right;
+}
+/* for this jeremiah helped me tweek a little a bit during study hall, in order for the form to be align right */
+#quote-form {
+  background-color: lightgoldenrodyellow;
+  border: 20%;
+  border-radius: 20px;
+  text-align: center; 
+  margin: 12px;
+  right:  10;
+  left: 10;
+  padding-top: 20px;
+}
+
+.form-field{
+  margin-bottom: 15px;
+  border-radius: 14px;
+  color: green;
+  
+}
+/* for border radius i decided to add that because i think is better when users see that way for visual. the rest i followed dr. smalls' code along video. */
+button {
+  border: none;
+  background-color: green;
+  color: white;
+  height: 40px;
+  width:  80px;
+  border-radius: 14px;
+  
+}
+/* I reconsidered about accessbility of adding cursor pointer, which it indicates that the users are submiting the form and the buttons, at least, function when they are being clicked. */
+button:hover{
+border-radius: 14px;
+cursor: pointer;
+color: yellow;
+}
+/* for this, I followed dr. smalls' video code along that explains where when users click the button, this ensures that the outer border or outside box does not show. that it is why I have decided to add focus of psedudo-selector. */
+button:focus{
+  outline: none;
+}

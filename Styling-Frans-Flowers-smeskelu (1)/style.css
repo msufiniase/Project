@@ -1,0 +1,71 @@
+body {
+    color: #28897f;
+    background-color: #fcfcfc;
+    font-family: "Ariel", sans-serif;
+}
+
+header{
+  color: #f7567c;
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #28897f;
+    color: #28897f;
+    text-align: center;
+}
+/* for the color I went to this site to extract the hex code. 
+link: https://applecolors.com/color/FCFCFC */
+hr:after {
+    content: "✽";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #fcfcfc;
+}
+
+h2{
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 3px;
+}
+/* My reasoning would be the same reason as this site 
+(link: http://web-accessibility.carnegiemuseums.org/design/color/). 
+I never changed anything from tutorial video, 
+but my reasoning it be what it was stated above. */
+#donation{
+  color: #f7567c;
+}
+/* The reason why I added hover, so when people hover-- they know that, 
+that price is the official price that is been reduced. I also added pointer to it, 
+which I already learned this all by myself. I added pointer, so when they about or going to click the price, 
+that price will redirect them to the purchase or pay form. I added this to h3 specifically. without pointer, 
+nothing would function properly.  */
+
+h3:hover{
+  color: purple;
+  cursor: pointer;
+}
+/* the reason why I added text decoration color, 
+so that it will signify people that the previous price is not included in other words a discount. 
+I also tried not use too much of red because using it will overpower the screen, 
+but also it will not bring back customers. 
+The reason why I say that because (link: https://accessible-colors.com/) says that, 
+if i am reading that correctly, 
+it will not suucceed of grabbing people's attention or is going to be too strong.
+I decide to use black on green that will not overpower the screen.  */
+h5{
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+address{
+  font-weight: bold;
+}
+
+

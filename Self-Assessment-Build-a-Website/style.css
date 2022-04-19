@@ -1,0 +1,255 @@
+/* @charset "UTF-8";  I have went to study hall and jeremiah told me that putting this is a reduntant of charset. */
+/* DEBUG */
+/* * {
+    background-color: black !important;
+    color: black !important;
+    border: 2px solid red !important;
+} */
+@font-face {
+  font-family: Raleway-Light;
+  src: url("assets/raleway/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: CaviarDreams;
+  src: url("assets/caviar/CaviarDreams.ttf");
+}
+
+
+/* Looked over to this site, to remind me of how links should be structured-- also decided to use the same structure, but will change the colors maybe also change the style, so I consider about accessbility and balancing the colors. Link: http://www.daks.me/css_navbar.php#:~:text=Add%20text%2Dalign%3Acenter%20to,Home
+
+Link for hotel that I am doing, but changing up the style perhaps the colors as well: https://hoteldel.com/
+
+Reference for getting the hotel image
+https://pixabay.com/photos/hotel-del-coronado-san-diego-hotel-74079/ 
+
+below are comments that I have tried, but did not worked as planned-- towards the end of the hero image and text.
+*/
+
+/* HTML and Body Style. remodified the style below due to not looking good on the screen. Link:https://www.w3schools.com/howto/howto_css_navbar_image.asp */
+ html{
+  /* background-image:  url("assets/hotel-del-coronado.jpg");  */
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background-image: url("assets/water.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  opacity: .56 .67 .87;
+} 
+/* html::before{
+  background-image: url("assets/hotel-del-coronado.jpg");
+  background-repeat: no;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, .7);
+*/
+/*html::after{
+  background-image: url("assets/hotel-del-coronado.jpg");
+  background-repeat: no;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, .7);
+} */
+/* reference to img url link: https://www.pexels.com/photo/palm-trees-at-night-258154/ */
+body{
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/pexels-pixabay-258154.jpeg"); 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: normal;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  margin-left: 62px;
+  margin-right: 0;
+  padding: 14px 16px;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  background-color: black;
+  float: right;
+  border: 14px 16px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+}
+li {
+  margin-left: 60px; 
+  display: block;
+  float: right;
+}
+li a{
+display: inline-block;
+color:  whitesmoke;
+border: 50px;
+text-decoration: none;
+padding: 14px 16px;
+
+}
+li a:hover{
+  background-color: lightslategray;
+}
+/* Playing with different colors, so it balances. Link that helped me understand better: https://visme.co/blog/website-color-schemes/ 
+ https://www.w3schools.com/howto/howto_css_hero_image.asp for below hero img
+  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+ 
+.Coronado-del-hotel {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+   margin: 0 auto; 
+  /* left: 1; */
+  text-align: center;
+  overflow: hidden;
+  /* background-image: url("assets/water.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.Coronado-del-hotel{
+  background-color:  rgba(255, 255, 255, .7);
+  border-radius: 12px;
+  font-family: CaviarDreams;
+
+  /* text-align: center; */
+}
+p::first-letter{
+  font-size: 100%;
+  color: red;
+}
+/* Main Style */
+.parallax-about{
+  text-decoration: none;
+  /* background-color: white; */
+  background-color: rgba(255, 255, 255, .7);
+  display: inline-block;
+  color:  black;
+  /* background-image: url("assets/water.jpg"); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 12px;
+  padding: -50px 0 -100px -20px;
+  font-family: Raleway-Light;
+}
+#hotel-del{
+  float: left;
+  border-radius: 14px;
+}
+/* H3 Style */
+.parallax-2 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  border-radius: 14px;
+}
+.parallax-3{
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  
+}
+.parallax-3::before{
+  background-image: url("assets/water.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  
+
+}
+.parallax-3::after{
+  background-image: url("assets/water.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  
+}
+.separate-image{
+  border-radius: 14px;
+  width: 20%;
+  height: 20%;
+  float: left;
+  font-family: CaviarDreams;
+  font-size: 12%;
+ 
+}
+/* Button Style */
+button{
+  background-color: lightcoral;
+  display: block;
+  position: relative;
+  margin-left: 34%;
+  left: 1;
+  border-radius: 50px;
+  height: 15%;
+
+}
+button:focus{
+outline: none;
+}
+button:hover{
+  cursor: pointer;
+  color: greenyellow;
+  transform: translate(1.5s);
+  translate: scale(1);
+}
+
+
+/* Footer Style */ 
+footer{
+  background-color: black;
+  margin: 0 auto;
+  padding: 14px 16px;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  text-decoration: none;
+}
+/* Link for media queries style: https://wpbuffs.com/media-query-for-mobile/ */
+/* Media Query Phones Style */ 
+/* Jeremiah showed me this feature while I was in the studyhall that explained me how each devices respond when user interact or in other word when texts move they move accordingly. Link: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
+ @media only screen and (max-width: 480px) {
+   font-size: clamp(1.2rem, 2.1vh, 1.9rem);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* Media Query Tablets Style */ 
+
+@media only screen and (min-width: 483px){
+
+}
+
+/* Media Query Desktop Style */
+
+@media only screen and (min-width: 769px) {
+  
+}

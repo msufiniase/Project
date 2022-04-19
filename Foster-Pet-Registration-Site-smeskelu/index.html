@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Foster A Pet</title>
+    <link href="style.css" rel="stylesheet"  type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sign Up to Foster a Pet</h1>
+      <!-- for this one I went back to module three "html tables - 10 mins" because I have already forgotten it. I 
+      also went to mdn web docs site to remind me of how the table should be structured. -->
+      <table>
+        <thead>
+        <tr>
+          <th colspan="3">Available Pets</th>
+        </tr>
+      <tr>
+        <th scope="colgroup">Name</th>
+        <th>Age</th>
+        <th>Breed</th>
+      </tr>
+      </thead>
+      <tr>
+       <th scope="row">Benny</th>
+       <td>2</td>
+       <td>Golden Retriever</td>
+      </tr>
+      <tr>
+       <th scope="row">Felix</th>
+       <td>5</td>
+       <td>Orange Tabby</td>
+      </tr>
+      <tr>
+       <th scope="row">Cooper</th>
+       <td>8</td>
+       <td>German Shepherd</td>
+      </tr>
+      <tr>
+       <th scope="row">Anna</th>
+       <td>3</td>
+       <td>Long-Haired Dachshund</td>
+      </tr>
+      </table>
+      <img src="assets/dog.png" alt="Cute Dog Looking Over Form" width="40%">
+    </header>
+  <form>
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" placeholder="Jane Doe" name="name">
+  <label for="dob">Date of Birth</label>
+  <!-- I paused the video until I catch up -->
+  <input type="date" id="dob" name="dob">
+<!-- I paused the video and decided to try it all by myself. After I have finished coding this, I went back to the video to make sure that I got everything correct-- which I ended up doing everything correctly with no any troubles also without the video. -->
+  <label for="email">Email</label>
+  <input type="email" id="email" placeholder="example@domain.com" name="email">
+  <!-- I did the same method as I did before where I paused the video and tried the code all by myself, this time time there were no errors or troubles. I spelled out the words for the id, but when I went back to the video, the words were not spelled out for the id, so I did the same thing not to spell out the words. -->
+  <label for="pw">Password</label>
+  <input type="password" id="pw" name="password">
+  <!-- This time, I made a mistake where I typed for="number" for the label and id="number" for the input. Once I went back to the video, I corrected those errors. -->
+  <label for="num-pets">Number of Pets</label>
+  <input type="number" min="0" name="num-pets">
+  <!--
+    <button type="radio" id="radio">Have you fostered before?</button> 
+    
+    The code that you see above is an error because I have tried to do it all by myself by pausing the video, but no luck. The code above is the code that I have tried
+    
+    I have also tried the code below, but did not worked. Instead doing all by myself  I decide to follow along with the video.
+  <radio type="button">have you fostered before?</radio>
+  <li>yes</li> -->
+  <h4>Have you fostered before?</h4>
+  <label for="yes">
+  <input type="radio" id="yes" name="prev-experinced"> Yes</input>
+  </label>
+  <!-- This time, I have paused the video and tried it myself without playing the video and the 
+  result is that it came out what I was expecting, it looks like exactly what is showing on the example on canvas and also on the video.  After going back to the video, I forgot that there was another step and I followed that step along with the video. Now it works -->
+  <label for="no">
+    <input type="radio" id="no" name="prev-experinced"> No</input>
+  </label>
+  <!-- This time I follwed along with the video instead of trying all myslef -->
+    <h4>Which one of these apply to your home?</h4>
+    <label for="apartment">Apartment</label>
+    <input type="checkbox" id="apartment" name="apartment">
+    <label for="children">Children</label>
+    <input type="checkbox" id="Children" name="children">
+    <label for="yard">Yard</label>
+    <input type="checkbox" id="yard" name="yard">
+    <input type="submit" value="sign up">
+  </form>
+  </body>
+</html>
