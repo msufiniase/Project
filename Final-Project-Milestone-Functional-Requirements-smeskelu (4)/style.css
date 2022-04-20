@@ -1,0 +1,89 @@
+/* You can add custom CSS and extend Boostrap styles in this file.  Remember, Bootstrap is just CSS at the end of the day! */
+#hero-section {
+  /* background-image: url("asset/trees.jpeg"); */
+  background-image: linear-gradient(rgba(0, 112, 190, .4), rgba(0, 0, 156, .5)), url("asset/trees.jpeg");
+  /* background-color: rgba(0, 0, 0, .85);  */
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  opacity: calc(21% + 3px); /* Sizzle */
+  text-shadow: 4px 4px rgba(120,0,0,.4);
+  position: sticky;
+}
+/* Head shot  */
+#imgmyself{
+  width: clamp(115.6px, 48.4vw, 199.2px);
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.carousel-item img{
+   /* width: 70vw; */
+   /* margin: auto; */
+   /* height: 70vh; */
+   /* position: center; */
+   background-position: center;
+   background-size: cover;
+}
+
+/* .carousel { */
+  /* background-color:  skyblue; */
+  /* height: 70vh; */
+  /* width:  70vw; */
+  /* margin: 0px 0px auto; */
+  /* margin-left: 10%; */
+/* } */
+
+.carousel p {
+  color: #0CC4CA;
+}
+
+h5, p {
+  color:  #0CC4CA;
+}
+
+
+
+#mission-section {
+  background-color: rgba(225, 127, 80, .6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+ /*  width: clamp(140px,50vh,300px); */
+  width:  100vw;
+  /* padding: 0px;
+  margin: 0px; */
+  /* margin: 0px 0px auto;
+  margin-left: -10px auto;
+  padding-right: -50px 0px auto; */
+  
+}
+ .container{
+  max-width: 100vw;
+} 
+#skills-section{
+  background-color: rgba(0, 112, 220, .5);
+  color: white;
+}
+#projects-section{
+  background-color: rgba(0, 112, 220, .5);
+  color: white;
+}
+8ball{
+  height: 20px;
+}
+assets/Calculator-icon{
+  height: 20px;
+}
+/* 
+
+All the images you see on the right are more like trial and errors thing to see if the images would work on the homepage
+
+
+*/
+
+
