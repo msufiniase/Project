@@ -1,0 +1,39 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#red-choice:hover{
+  color: red;
+  cursor: pointer;
+  
+}
+ p, #color-match, #blue-choice{
+  display: inline-block;
+  margin-left: 50px;
+  cursor: pointer;
+}
+#blue-choice:hover{
+color: blue;
+}
+#container{
+  color: red;
+}
+ .card, .card-body{
+  border: 100%;
+  border-radius: 24px;
+  height: 60%;
+   display: inline-block;
+}
+/* .red-card{
+  background-color: red;
+}
+.blue-card{
+  background-color: blue;
+} */
+#reset{
+  display: inline;
+}
+input{
+  display: inline-grid;
+}
